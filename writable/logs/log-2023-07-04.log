@@ -1,0 +1,734 @@
+INFO - 2023-07-04 07:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 07:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 07:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 07:44:17 --> Undefined variable $film
+in APPPATH\Views\genre\semuagenre.php on line 21.
+ 1 APPPATH\Views\genre\semuagenre.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 5 APPPATH\Controllers\Genre.php(25): view('genre/semuagenre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 07:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 08:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 08:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 09:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 09:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 09:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-04 10:41:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4Ade\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\CI4Ade\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_film', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4Ade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*...', Array, false)
+#4 C:\xampp\htdocs\CI4Ade\app\Models\FilmModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4Ade\app\Controllers\Film.php(34): App\Models\FilmModel->getAllDataJoin()
+#6 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(934): App\Controllers\Film->all()
+#7 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+#8 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4Ade\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4Ade\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\CI4Ade\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4Ade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*...', Array, false)
+#3 C:\xampp\htdocs\CI4Ade\app\Models\FilmModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CI4Ade\app\Controllers\Film.php(34): App\Models\FilmModel->getAllDataJoin()
+#5 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(934): App\Controllers\Film->all()
+#6 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+#7 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4Ade\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CI4Ade\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-07-04 10:41:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*, `genre`.`nama_genre`
+FROM `film`
+JOIN `genre` ON `genre`.`id_genre` = `film`.`id_genre`', [], false)
+ 3 APPPATH\Models\FilmModel.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Film.php(34): App\Models\FilmModel->getAllDataJoin()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->all()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 10:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 10:42:40 --> Undefined variable $film
+in APPPATH\Views\genre\semuagenre.php on line 21.
+ 1 APPPATH\Views\genre\semuagenre.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 5 APPPATH\Controllers\Genre.php(25): view('genre/semuagenre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 10:42:52 --> Undefined variable $film
+in APPPATH\Views\genre\semuagenre.php on line 21.
+ 1 APPPATH\Views\genre\semuagenre.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 5 APPPATH\Controllers\Genre.php(25): view('genre/semuagenre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 10:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 10:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 10:50:53 --> Undefined variable $film
+in APPPATH\Views\genre\semuagenre.php on line 40.
+ 1 APPPATH\Views\genre\semuagenre.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 5 APPPATH\Controllers\Genre.php(25): view('genre/semuagenre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 10:58:22 --> Undefined variable $film
+in APPPATH\Views\genre\semuagenre.php on line 40.
+ 1 APPPATH\Views\genre\semuagenre.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 5 APPPATH\Controllers\Genre.php(25): view('genre/semuagenre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 10:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 10:58:29 --> Undefined variable $film
+in APPPATH\Views\genre\semuagenre.php on line 40.
+ 1 APPPATH\Views\genre\semuagenre.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\semuagenre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuagenre', [], true)
+ 5 APPPATH\Controllers\Genre.php(25): view('genre/semuagenre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 10:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 10:59:04 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 10:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 10:59:48 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(32): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:00:17 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:01:49 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:01:51 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:04:13 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:08:33 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:08:49 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:13:54 --> Undefined variable $decryptedId
+in APPPATH\Controllers\Genre.php on line 31.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $decryptedId', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Controllers\\Genre.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:14:05 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:16:18 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 11:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:16:24 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:16:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:16:48 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:17:18 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:21:36 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:24:31 --> Call to undefined method App\Models\GenreModel::getDataByID()
+in APPPATH\Controllers\Genre.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:25:27 --> Undefined constant App\Controllers\Genre::genre
+in APPPATH\Controllers\Genre.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:25:36 --> Call to undefined method App\Models\GenreModel::getDataByID()
+in APPPATH\Controllers\Genre.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:25:48 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:30:35 --> Undefined variable $decryptedId
+in APPPATH\Controllers\Genre.php on line 31.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $decryptedId', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Controllers\\Genre.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:30:44 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:31:13 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:31:22 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:31:36 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:33:34 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:51:55 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:52:06 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:52:21 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:52:37 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:53:12 --> Call to undefined function App\Controllers\decryptedUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:53:20 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-07-04 11:55:08 --> Call to undefined function App\Controllers\decryptUrl()
+in APPPATH\Controllers\Genre.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 11:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 11:56:39 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(32): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:18:09 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(32): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:20:29 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(32): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:21:52 --> Call to undefined method App\Models\GenreModel::getDataByID
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Genre.php(31): CodeIgniter\Model->__call('getDataByID', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-04 12:23:45 --> mysqli_sql_exception: Unknown column 'genre.id' in 'where clause' in E:\CI4Ade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\CI4Ade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\CI4Ade\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\CI4Ade\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\CI4Ade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\CI4Ade\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\CI4Ade\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 E:\CI4Ade\app\Models\GenreModel.php(22): CodeIgniter\BaseModel->find('1')
+#7 E:\CI4Ade\app\Controllers\Genre.php(31): App\Models\GenreModel->getDataByID('1')
+#8 E:\CI4Ade\system\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+#9 E:\CI4Ade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 E:\CI4Ade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\CI4Ade\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\CI4Ade\system\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\publi...')
+#13 {main}
+CRITICAL - 2023-07-04 12:23:45 --> Unknown column 'genre.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = :genre.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Models\GenreModel.php(22): CodeIgniter\BaseModel->find('1')
+ 8 APPPATH\Controllers\Genre.php(31): App\Models\GenreModel->getDataByID('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-04 12:24:08 --> mysqli_sql_exception: Unknown column 'genre.id' in 'where clause' in E:\CI4Ade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\CI4Ade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\CI4Ade\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\CI4Ade\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\CI4Ade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\CI4Ade\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\CI4Ade\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 E:\CI4Ade\app\Models\GenreModel.php(22): CodeIgniter\BaseModel->find('1')
+#7 E:\CI4Ade\app\Controllers\Genre.php(31): App\Models\GenreModel->getDataByID('1')
+#8 E:\CI4Ade\system\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+#9 E:\CI4Ade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 E:\CI4Ade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\CI4Ade\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\CI4Ade\system\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\publi...')
+#13 {main}
+CRITICAL - 2023-07-04 12:24:08 --> Unknown column 'genre.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = :genre.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Models\GenreModel.php(22): CodeIgniter\BaseModel->find('1')
+ 8 APPPATH\Controllers\Genre.php(31): App\Models\GenreModel->getDataByID('1')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-04 12:28:00 --> mysqli_sql_exception: Unknown column 'genre.id' in 'where clause' in E:\CI4Ade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\CI4Ade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\CI4Ade\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\CI4Ade\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\CI4Ade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\CI4Ade\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\CI4Ade\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '6')
+#6 E:\CI4Ade\app\Models\GenreModel.php(22): CodeIgniter\BaseModel->find('6')
+#7 E:\CI4Ade\app\Controllers\Genre.php(31): App\Models\GenreModel->getDataByID('6')
+#8 E:\CI4Ade\system\CodeIgniter.php(934): App\Controllers\Genre->update('6')
+#9 E:\CI4Ade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+#10 E:\CI4Ade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\CI4Ade\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\CI4Ade\system\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\publi...')
+#13 {main}
+CRITICAL - 2023-07-04 12:28:00 --> Unknown column 'genre.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `genre`
+WHERE `genre`.`id` = :genre.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '6')
+ 7 APPPATH\Models\GenreModel.php(22): CodeIgniter\BaseModel->find('6')
+ 8 APPPATH\Controllers\Genre.php(31): App\Models\GenreModel->getDataByID('6')
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('6')
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:30:03 --> Undefined variable $genre
+in APPPATH\Views\genre\edit_genre.php on line 21.
+ 1 APPPATH\Views\genre\edit_genre.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genre', 'E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php', 21)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/edit_genre', [], true)
+ 5 APPPATH\Controllers\Genre.php(32): view('genre/edit_genre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:30:38 --> Undefined variable $genre
+in APPPATH\Views\genre\edit_genre.php on line 25.
+ 1 APPPATH\Views\genre\edit_genre.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genre', 'E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/edit_genre', [], true)
+ 5 APPPATH\Controllers\Genre.php(32): view('genre/edit_genre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:30:39 --> Undefined variable $genre
+in APPPATH\Views\genre\edit_genre.php on line 25.
+ 1 APPPATH\Views\genre\edit_genre.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genre', 'E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/edit_genre', [], true)
+ 5 APPPATH\Controllers\Genre.php(32): view('genre/edit_genre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 12:30:42 --> Undefined variable $genre
+in APPPATH\Views\genre\edit_genre.php on line 25.
+ 1 APPPATH\Views\genre\edit_genre.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genre', 'E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\CI4Ade\\app\\Views\\genre\\edit_genre.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/edit_genre', [], true)
+ 5 APPPATH\Controllers\Genre.php(32): view('genre/edit_genre', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 12:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:33:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 12:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-04 14:15:54 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_ade' in C:\xampp\htdocs\CI4Ade\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\CI4Ade\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'db_ade', 3306, '', 0)
+#1 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\CI4Ade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*...', Array, false)
+#4 C:\xampp\htdocs\CI4Ade\app\Models\FilmModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4Ade\app\Controllers\Film.php(34): App\Models\FilmModel->getAllDataJoin()
+#6 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(934): App\Controllers\Film->all()
+#7 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+#8 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\CI4Ade\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\CI4Ade\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_ade' in C:\xampp\htdocs\CI4Ade\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\CI4Ade\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\CI4Ade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*...', Array, false)
+#3 C:\xampp\htdocs\CI4Ade\app\Models\FilmModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\CI4Ade\app\Controllers\Film.php(34): App\Models\FilmModel->getAllDataJoin()
+#5 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(934): App\Controllers\Film->all()
+#6 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+#7 C:\xampp\htdocs\CI4Ade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CI4Ade\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CI4Ade\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-07-04 14:15:54 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_ade'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `film`.*, `genre`.`nama_genre`
+FROM `film`
+JOIN `genre` ON `genre`.`id_genre` = `film`.`id_genre`', [], false)
+ 3 APPPATH\Models\FilmModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Film.php(34): App\Models\FilmModel->getAllDataJoin()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->all()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 14:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 14:25:41 --> Invalid file: "film/update.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('film/update.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/update', [], true)
+ 3 APPPATH\Controllers\Film.php(100): view('film/update', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->update('11')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 14:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-04 14:31:26 --> Undefined variable $data_film
+in APPPATH\Views\film\semuafilm.php on line 28.
+ 1 APPPATH\Views\film\semuafilm.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\film\\semuafilm.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\film\\semuafilm.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/semuafilm', [], true)
+ 5 APPPATH\Controllers\Film.php(35): view('film/semuafilm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->all()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+INFO - 2023-07-04 14:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:32:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-04 14:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

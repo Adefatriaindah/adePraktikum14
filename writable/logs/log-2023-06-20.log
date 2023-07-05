@@ -1,0 +1,171 @@
+CRITICAL - 2023-06-20 05:06:45 --> Undefined variable $film
+in APPPATH\Views\genre\index.php on line 42.
+ 1 APPPATH\Views\genre\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $film', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/index', [], true)
+ 5 APPPATH\Controllers\Genre.php(27): view('genre/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 05:20:55 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 05:22:39 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 05:23:01 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 05:23:32 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:22:52 --> syntax error, unexpected token "<"
+in APPPATH\Views\film\index.php on line 44.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 3 APPPATH\Controllers\Film.php(27): view('film/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:33:38 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\genre\semuafilm.php on line 11.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/semuafilm', [], true)
+ 3 APPPATH\Controllers\Genre.php(32): view('genre/semuafilm', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->all()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:36:01 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:36:44 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:36:46 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:37:02 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:38:55 --> Class "App\Models\TentangKamiModel" not found
+in APPPATH\Controllers\TentangKami.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\TentangKami->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 07:47:23 --> Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\TentangKami.php on line 10.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('tentangkami/index')
+ 3 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('tentangkami/index')
+ 4 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('tentangkami/index')
+ 5 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 08:15:56 --> Invalid file: "tentangkami.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tentangkami.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tentangkami', [], true)
+ 3 APPPATH\Controllers\TentangKami.php(16): view('tentangkami')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TentangKami->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TentangKami))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 08:16:53 --> Invalid file: "tentangkami.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tentangkami.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tentangkami', [], true)
+ 3 APPPATH\Controllers\TentangKami.php(14): view('tentangkami')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TentangKami->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TentangKami))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 08:18:50 --> Invalid file: "tentangkami.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tentangkami.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tentangkami', [], true)
+ 3 APPPATH\Controllers\TentangKami.php(14): view('tentangkami')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TentangKami->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TentangKami))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 08:54:57 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 394.
+ 1 APPPATH\Views\genre\index.php(60): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\genre\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('genre/index', [], true)
+ 5 APPPATH\Controllers\Genre.php(27): view('genre/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Genre->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 11:20:11 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 394.
+ 1 APPPATH\Views\film\index.php(61): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\film\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('film/index', [], true)
+ 5 APPPATH\Controllers\Film.php(27): view('film/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Film->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Film))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
+CRITICAL - 2023-06-20 13:23:26 --> Undefined variable $Tentang Kami
+in APPPATH\Views\tentangkami.php on line 11.
+ 1 APPPATH\Views\tentangkami.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Tentang Kami', 'C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\tentangkami.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\CI4Ade\\app\\Views\\tentangkami.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tentangkami', [], true)
+ 5 APPPATH\Controllers\TentangKami.php(19): view('tentangkami', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TentangKami->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TentangKami))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\CI4Ade\\public\\index.php')
